@@ -5,8 +5,6 @@ describe "SerpApi Desktop JSON" do
     before :all do
       @response = HTTP.get 'https://serpapi.com/search.json?q=apple.com&source=test&engine=bing'
       @json = @response.parse
-
-      puts(@json)
     end
 
     it "returns http success" do
